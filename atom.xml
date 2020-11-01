@@ -6,7 +6,7 @@
   <link href="https://10n31y9047.github.io/index/atom.xml" rel="self"/>
   
   <link href="https://10n31y9047.github.io/index/"/>
-  <updated>2020-10-30T12:52:48.874Z</updated>
+  <updated>2020-10-31T07:07:40.463Z</updated>
   <id>https://10n31y9047.github.io/index/</id>
   
   <author>
@@ -17,40 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Markdown Reference Manual</title>
-    <link href="https://10n31y9047.github.io/index/2020/10/30/markdown-reference-manual/"/>
-    <id>https://10n31y9047.github.io/index/2020/10/30/markdown-reference-manual/</id>
-    <published>2020-10-30T12:33:39.000Z</published>
-    <updated>2020-10-30T12:52:48.874Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;MarkDown参考手册&quot;&gt;&lt;a href=&quot;#MarkDown参考手册&quot; class=&quot;headerlink&quot; title=&quot;MarkDown参考手册&quot;&gt;&lt;/a&gt;MarkDown参考手册&lt;/h1&gt;&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Markdown 的本质是让我们回归内容本身。&lt;/strong&gt; 当你明白这个道理的时候，你会明白为什么许多功能 Markdown 没有。&lt;/p&gt;
-&lt;hr&gt;</summary>
+    <title>Blender入门篇（一）</title>
+    <link href="https://10n31y9047.github.io/index/2020/10/31/blender-ru-men-pian-yi/"/>
+    <id>https://10n31y9047.github.io/index/2020/10/31/blender-ru-men-pian-yi/</id>
+    <published>2020-10-31T06:53:47.000Z</published>
+    <updated>2020-10-31T07:07:40.463Z</updated>
     
     
     
+    
+    <category term="Blender" scheme="https://10n31y9047.github.io/index/categories/Blender/"/>
+    
+    
+    <category term="Blender" scheme="https://10n31y9047.github.io/index/tags/Blender/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://10n31y9047.github.io/index/2020/10/30/hello-world/"/>
-    <id>https://10n31y9047.github.io/index/2020/10/30/hello-world/</id>
-    <published>2020-10-30T10:19:37.572Z</published>
-    <updated>2020-10-30T10:19:37.572Z</updated>
+    <title>Markdown参考手册</title>
+    <link href="https://10n31y9047.github.io/index/2020/10/30/markdown-can-kao-shou-ce/"/>
+    <id>https://10n31y9047.github.io/index/2020/10/30/markdown-can-kao-shou-ce/</id>
+    <published>2020-10-30T12:33:39.000Z</published>
+    <updated>2020-10-31T13:59:56.180Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Markdown是一种轻量级标记语言，创始人为John Gruber. 它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
     
     
     
+    
+    <category term="Markdown" scheme="https://10n31y9047.github.io/index/tags/Markdown/"/>
     
   </entry>
   
