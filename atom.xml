@@ -6,7 +6,7 @@
   <link href="https://10n31y9047.github.io/index/atom.xml" rel="self"/>
   
   <link href="https://10n31y9047.github.io/index/"/>
-  <updated>2021-02-10T09:24:19.008Z</updated>
+  <updated>2021-12-04T08:33:00.869Z</updated>
   <id>https://10n31y9047.github.io/index/</id>
   
   <author>
@@ -17,18 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>《体验引擎：游戏设计全景探秘》阅读笔记</title>
+    <link href="https://10n31y9047.github.io/index/2021/12/04/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji/"/>
+    <id>https://10n31y9047.github.io/index/2021/12/04/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji/</id>
+    <published>2021-12-04T08:31:31.000Z</published>
+    <updated>2021-12-04T08:33:00.869Z</updated>
+    
+    
+    
+    
+    <category term="阅读笔记" scheme="https://10n31y9047.github.io/index/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="阅读笔记" scheme="https://10n31y9047.github.io/index/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Blender 2.9 入门篇（二） 编辑模式</title>
     <link href="https://10n31y9047.github.io/index/2021/01/29/blender-2.9-ru-men-pian-er-bian-ji-mo-shi/"/>
     <id>https://10n31y9047.github.io/index/2021/01/29/blender-2.9-ru-men-pian-er-bian-ji-mo-shi/</id>
     <published>2021-01-29T12:25:35.000Z</published>
-    <updated>2021-02-10T09:24:19.008Z</updated>
+    <updated>2021-12-04T08:37:45.686Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;1-编辑模式的基本操作&quot;&gt;&lt;a href=&quot;#1-编辑模式的基本操作&quot; class=&quot;headerlink&quot; title=&quot;1 编辑模式的基本操作&quot;&gt;&lt;/a&gt;1</summary>
+    <summary type="html">&lt;h1 id=&quot;1-编辑模式的基本操作&quot;&gt;&lt;a href=&quot;#1-编辑模式的基本操作&quot; class=&quot;headerlink&quot; title=&quot;1. 编辑模式的基本操作&quot;&gt;&lt;/a&gt;1.</summary>
         
       
     
@@ -46,15 +63,14 @@
     <link href="https://10n31y9047.github.io/index/2021/01/27/blender-2.9-ru-men-pian-yi-wu-ti-mo-shi-xia-de-ji-ben-cao-zuo/"/>
     <id>https://10n31y9047.github.io/index/2021/01/27/blender-2.9-ru-men-pian-yi-wu-ti-mo-shi-xia-de-ji-ben-cao-zuo/</id>
     <published>2021-01-27T06:53:47.000Z</published>
-    <updated>2021-02-04T13:27:54.031Z</updated>
+    <updated>2021-12-04T08:37:56.770Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;1-基本操作&quot;&gt;&lt;a href=&quot;#1-基本操作&quot; class=&quot;headerlink&quot; title=&quot;1 基本操作&quot;&gt;&lt;/a&gt;1 基本操作&lt;/h1&gt;&lt;p&gt;打开添加物体快捷菜单：&lt;code&gt;Shift+A&lt;/code&gt;，也可以使用左上的添加菜单。&lt;/p&gt;
-&lt;h1</summary>
+    <summary type="html">&lt;h1 id=&quot;1-基本操作&quot;&gt;&lt;a href=&quot;#1-基本操作&quot; class=&quot;headerlink&quot; title=&quot;1. 基本操作&quot;&gt;&lt;/a&gt;1.</summary>
         
       
     
@@ -72,7 +88,7 @@
     <link href="https://10n31y9047.github.io/index/2020/10/30/markdown-can-kao-shou-ce/"/>
     <id>https://10n31y9047.github.io/index/2020/10/30/markdown-can-kao-shou-ce/</id>
     <published>2020-10-30T12:33:39.000Z</published>
-    <updated>2021-01-28T12:28:13.338Z</updated>
+    <updated>2021-12-04T08:38:44.933Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
