@@ -6,7 +6,7 @@
   <link href="https://10n31y9047.github.io/index/atom.xml" rel="self"/>
   
   <link href="https://10n31y9047.github.io/index/"/>
-  <updated>2021-01-29T12:18:27.994Z</updated>
+  <updated>2021-02-10T09:24:19.008Z</updated>
   <id>https://10n31y9047.github.io/index/</id>
   
   <author>
@@ -17,18 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Blender入门篇（一） 物体模式下的基本操作</title>
-    <link href="https://10n31y9047.github.io/index/2021/01/27/blender-ru-men-pian-yi-wu-ti-mo-shi-xia-de-ji-ben-cao-zuo/"/>
-    <id>https://10n31y9047.github.io/index/2021/01/27/blender-ru-men-pian-yi-wu-ti-mo-shi-xia-de-ji-ben-cao-zuo/</id>
+    <title>Blender 2.9 入门篇（二） 编辑模式</title>
+    <link href="https://10n31y9047.github.io/index/2021/01/29/blender-2.9-ru-men-pian-er-bian-ji-mo-shi/"/>
+    <id>https://10n31y9047.github.io/index/2021/01/29/blender-2.9-ru-men-pian-er-bian-ji-mo-shi/</id>
+    <published>2021-01-29T12:25:35.000Z</published>
+    <updated>2021-02-10T09:24:19.008Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-编辑模式的基本操作&quot;&gt;&lt;a href=&quot;#1-编辑模式的基本操作&quot; class=&quot;headerlink&quot; title=&quot;1 编辑模式的基本操作&quot;&gt;&lt;/a&gt;1</summary>
+        
+      
+    
+    
+    
+    <category term="Blender" scheme="https://10n31y9047.github.io/index/categories/Blender/"/>
+    
+    
+    <category term="Blender" scheme="https://10n31y9047.github.io/index/tags/Blender/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Blender 2.9 入门篇（一） 物体模式下的基本操作</title>
+    <link href="https://10n31y9047.github.io/index/2021/01/27/blender-2.9-ru-men-pian-yi-wu-ti-mo-shi-xia-de-ji-ben-cao-zuo/"/>
+    <id>https://10n31y9047.github.io/index/2021/01/27/blender-2.9-ru-men-pian-yi-wu-ti-mo-shi-xia-de-ji-ben-cao-zuo/</id>
     <published>2021-01-27T06:53:47.000Z</published>
-    <updated>2021-01-29T12:18:27.994Z</updated>
+    <updated>2021-02-04T13:27:54.031Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;1-视图基本操作&quot;&gt;&lt;a href=&quot;#1-视图基本操作&quot; class=&quot;headerlink&quot; title=&quot;1 视图基本操作&quot;&gt;&lt;/a&gt;1</summary>
+    <summary type="html">&lt;h1 id=&quot;1-基本操作&quot;&gt;&lt;a href=&quot;#1-基本操作&quot; class=&quot;headerlink&quot; title=&quot;1 基本操作&quot;&gt;&lt;/a&gt;1 基本操作&lt;/h1&gt;&lt;p&gt;打开添加物体快捷菜单：&lt;code&gt;Shift+A&lt;/code&gt;，也可以使用左上的添加菜单。&lt;/p&gt;
+&lt;h1</summary>
         
       
     
