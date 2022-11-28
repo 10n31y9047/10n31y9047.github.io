@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>《体验引擎：游戏设计全景探秘》阅读笔记（四）</title>
+      <link href="2022/02/09/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-si/"/>
+      <url>2022/02/09/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-si/</url>
+      
+        <content type="html"><![CDATA[<h1 id="第四章-故事"><a href="#第四章-故事" class="headerlink" title="第四章 故事"></a>第四章 故事</h1><p>游戏与电影有相似之处，游戏剧情也参考剧本的<font color="red"><u>三幕式结构</u></font>。三幕式结构指的是把一个剧本的情节分为基础介绍，故事核心，以及高潮结局三个部分。</p><p>游戏开发过程可以分解为前期、研发和后期。</p><p>但游戏和电影的工作机制实际上截然不同，电影可以教给我们使用屏幕的方法（取景和构图、场景构建、剧本节奏、视觉效果等），但是电影不会教我们如何交互、如何做出决定，以及体验那种身临其境的感觉。所以，大量从电影中借鉴方法其实是有风险的，因为这样做有可能会让我们忽略游戏的故事所具有的强有力的挑战和机会。</p><p>当我们苦苦寻觅和故事有关的工具时，身边这些具有交互形式的事物：博物馆、美术馆、真实空间以及生活等，应该是我们最初的检验标准。这些古老的形式指出了最基本的挑战：根据玩家的选择来创作、修改和重新塑造一个故事，让它能够深化玩家所做的每一件事的意义。</p><h2 id="故事叙述工具"><a href="#故事叙述工具" class="headerlink" title="故事叙述工具"></a>故事叙述工具</h2><p>故事叙述工具是一种能够在玩家的脑海中形成故事情节的装置。</p><p>大多数故事性的媒体所使用的工具都极其有限，而游戏的可选项要多得多。游戏中可以：</p><ol><li>使用预先定制的图像和声音。</li><li>使用文字。</li><li>放置一些可以让玩家翻阅的画面。</li><li>创造一个可以让玩家探索的空间。</li></ol><p>游戏还有一些独有的工具，我们可以创造一些机制，能够根据玩家的决策和反应随意地创造剧情、角色，甚至是主题。</p><p>我们叙述故事的工具可以粗略地分成三个类别：<font color="red"><u>脚本故事（scripted story）、世界性故事（worldnarrative），以及浮现的故事（emergent story）。</u></font></p><h2 id="脚本故事"><a href="#脚本故事" class="headerlink" title="脚本故事"></a>脚本故事</h2><p>脚本故事指的是那些嵌入游戏的事件，并且他们总是以相同的方式展示。</p><p>脚本故事最基本的工具是<font color="red"><u>过场动画</u></font>，可以在其中使用所有从电影中学到的技巧。但过场动画会屏蔽所有的交互行为，破坏游戏流程。</p><h3 id="软脚本"><a href="#软脚本" class="headerlink" title="软脚本"></a>软脚本</h3><p><font color="red"><u>脚本序列</u></font>是一种加入了少许控制的脚本故事。它在播放事先制作好的事件时，不会完全屏蔽与玩家交互的界面。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《体验引擎：游戏设计全景探秘》阅读笔记（三）</title>
       <link href="2021/12/19/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-san/"/>
       <url>2021/12/19/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-san/</url>
