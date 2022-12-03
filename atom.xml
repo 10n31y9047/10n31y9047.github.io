@@ -6,7 +6,7 @@
   <link href="https://10n31y9047.github.io/index/atom.xml" rel="self"/>
   
   <link href="https://10n31y9047.github.io/index/"/>
-  <updated>2022-03-29T09:19:35.807Z</updated>
+  <updated>2022-12-03T18:13:17.738Z</updated>
   <id>https://10n31y9047.github.io/index/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Input System使用指南（一）环境配置</title>
+    <link href="https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/"/>
+    <id>https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/</id>
+    <published>2022-12-03T16:22:42.000Z</published>
+    <updated>2022-12-03T18:13:17.738Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;Unity在设计之初并未预见到当下的项目需要支持如此多的平台和设备，所以旧的Input</summary>
+        
+      
+    
+    
+    
+    <category term="Unity" scheme="https://10n31y9047.github.io/index/categories/Unity/"/>
+    
+    
+    <category term="Input System" scheme="https://10n31y9047.github.io/index/tags/Input-System/"/>
+    
+  </entry>
   
   <entry>
     <title>《体验引擎：游戏设计全景探秘》阅读笔记（四）</title>
