@@ -4,7 +4,33 @@
   
     
     <entry>
-      <title>Input System使用指南（二）直接输入</title>
+      <title>游戏设计的三种理论</title>
+      <link href="2023/06/27/you-xi-she-ji-de-san-chong-li-lun/"/>
+      <url>2023/06/27/you-xi-she-ji-de-san-chong-li-lun/</url>
+      
+        <content type="html"><![CDATA[<h1 id="总括"><a href="#总括" class="headerlink" title="总括"></a>总括</h1><p>在设计或分析游戏时，有三种常用的理论，他们分别是：</p><ol><li>MDA理论：Mechanics（机制）、Dynamics（动态）、Aesthetics（美学）</li><li>GMT理论：Goals（目标）、Means（方法）、Tools（工具）</li><li>TMV理论：Target（目标）、Mechanics（机制）、Verification（验证）</li></ol><h1 id="1-MDA理论"><a href="#1-MDA理论" class="headerlink" title="1. MDA理论"></a>1. MDA理论</h1><p>MDA是一种游戏的分析研究框架，它将游戏拆解为不同的组件，从而将游戏设计过程和方法系统化、标准化。</p><h2 id="M（Mechanics）"><a href="#M（Mechanics）" class="headerlink" title="M（Mechanics）"></a>M（Mechanics）</h2><p><strong>机制</strong>，指游戏中的基本组件，包括<strong>规则、算法和数据</strong>。举例来说，按下空格角色跳起就是一种机制，一次攻击经过公式计算后对敌人造成一定伤害也是一种机制。</p><h2 id="D（Dynamics）"><a href="#D（Dynamics）" class="headerlink" title="D（Dynamics）"></a>D（Dynamics）</h2><p><strong>动态</strong>，指游戏中的运行时行为，即<strong>玩家与游戏系统之间的互动</strong>。这是模型中最重要的部分，设计师与玩家之间通过这一部分进行交互。玩家通过此部分感受设计师希望通过机制带来的体验，设计师通过这部分获得玩家体验的反馈从而调整游戏机制。</p><h2 id="A（Aesthetics）"><a href="#A（Aesthetics）" class="headerlink" title="A（Aesthetics）"></a>A（Aesthetics）</h2><p><strong>美学</strong>，指玩家在游戏中的<strong>体验和感受</strong>，包括情感、挑战、幻想、探索等方面。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>MDA模型本身并没有评判游戏好坏的能力，这个模型更多的是作为一个<strong>调整和分析</strong>的思路，对于动态部分是设计师需要重点关注的，MDA模型可以让设计师从收集到的反馈和设计的游戏机制之间找到需要调整的部分。</p><p>MDA模型也可用于<strong>指导设计</strong>，它给设计师提供了<strong>自顶向下</strong>和<strong>自底向上</strong>两条思路。前一条从玩家体验触发，从想给玩家带来的美学出发，向下推导出需要的游戏机制，第二种是从现成的游戏机制出发，通过不同的游戏动态效果，推导出最合适的给玩家带来的游戏美学。</p><h1 id="2-GMT理论"><a href="#2-GMT理论" class="headerlink" title="2. GMT理论"></a>2. GMT理论</h1><p>GMT理论的主要目的和用途是预防和应对设计过程中的几种常见问题：</p><ul><li>混淆不同目标</li><li>把手段当作目标</li><li>手段和目标间没有逻辑关系</li></ul><h2 id="G（Goals）"><a href="#G（Goals）" class="headerlink" title="G（Goals）"></a>G（Goals）</h2><p><strong>目标</strong>，指某个主体希望通过某种途径达到的结果和目的。玩家目标、体验目标、设计目标，是3个完全不同的概念。</p><p><strong>玩家目标</strong>：玩家在游戏设置的情境中被要求达成的结果，或玩家自发地给自己规定的目标。</p><p><strong>体验目标</strong>：游戏设计师期望玩家通过游戏体验到的感官，心理和情感反馈。</p><p><strong>设计目标</strong>：游戏设计师期望通过具体的设计手法和内容而达到的特定设计/产品效果。</p><p>这三者中，设计目标可以服务于体验目标与玩家目标；玩家目标可以帮助达成体验目标。但是，这三者之间也可以是毫无关联的。例如，RocketLeague（火箭联盟）的玩家目标是获得胜利；体验目标是感受对抗的刺激感和流畅操作的快感；设计目标是在竞技类游戏领域做出创新，把赛车与足球结合创造新奇的竞技模式。</p><h2 id="M（Means）"><a href="#M（Means）" class="headerlink" title="M（Means）"></a>M（Means）</h2><p><strong>手段</strong>：达成目标的主要高阶手段（操作，思维，设计维度。）</p><h2 id="T（Tools）"><a href="#T（Tools）" class="headerlink" title="T（Tools）"></a>T（Tools）</h2><p><strong>工具</strong>：将手段细化之后的具体可执行低阶要素（设计师角度）或实际可交互，可感知低阶要素（玩家角度。）</p><p>对于不同的游戏，M-T的分解需要结合具体情况。</p><h2 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h2><p>在实践中，设计者应参考以下步骤使用GMT理论：</p><ol><li>定义目标，包括<strong>玩家目标</strong>、<strong>体验目标</strong>和<strong>设计目标</strong>。</li><li>确定实现目标的手段。</li><li>选择实现手段的工具。</li><li>实施与评估，若结果不符合预期，则需根据GMT理论重新选择目标、手段和工具。</li></ol><h3 id="玩家GMT的推导方式："><a href="#玩家GMT的推导方式：" class="headerlink" title="玩家GMT的推导方式："></a>玩家GMT的推导方式：</h3><p><strong>自上而下G–M–T</strong></p><ul><li>先从设定一个玩家目标出发</li><li>通常源于满足特定玩法机制和规则，以及品类固有特征和可玩内容的需要</li><li>逐步拆解为合适的/理想的/符合需要和标准的M，和T</li></ul><p><strong>自下而上T/M–G</strong></p><ul><li>先从特定的工具或者手段出发</li><li>通常源于对特定的设计要素，规则和玩法机制的探索</li><li>然后从工具和手段层面反推合适的玩家目标</li></ul><h3 id="体验GMT的推导方式："><a href="#体验GMT的推导方式：" class="headerlink" title="体验GMT的推导方式："></a>体验GMT的推导方式：</h3><p><strong>自上而下G–M–T</strong></p><ul><li>先从体验目标出发</li><li>通常源于实现特定体验目标，用户故事，市场需求的需要</li><li>逐步拆解为合适的/理想的/符合需要和标准的M，和T</li></ul><p><strong>自下而上T/M–G</strong></p><ul><li>先从特定的工具或者手段出发（比如某种美术风格/主线故事/世界观）</li><li>通常为了确保使用特定的手段和工具，因为相信它们会赋予产品最核心的价值和竞争力</li><li>然后从工具和手段层面反推合适的体验目标</li></ul><h1 id="3-TMV理论"><a href="#3-TMV理论" class="headerlink" title="3. TMV理论"></a>3. TMV理论</h1><p>TMV理论包含：<strong>Target（目的）</strong>、<strong>Mechanics（机制）</strong>、<strong>Verification（验证）</strong>。</p><p>TMV理论旨在通过整合MDA理论和GMT理论，优化设计思路，以实现设计目的。首先，确定游戏产品的设计意图，然后提出设计方案，进而制定游戏机制等具体设计内容。第三步，对游戏的核心体验、商业效果等进行实际验证，根据验证反馈，调整设计方案，不断打磨优化游戏产品。TMV理论更多的是对游戏设计提出了系统化、工程化的思路，相比MDA和GMT更加具备实践意义。在游戏拆解意义上，提供了对于游戏产品化的理解。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol><li><a href="https://zhuanlan.zhihu.com/p/630626214">【游戏设计-游戏拆解】P1 游戏拆解导论</a></li><li><a href="https://zhuanlan.zhihu.com/p/82577774">MDA模型：游戏设计的重要理论</a></li><li><a href="https://zhuanlan.zhihu.com/p/329912608">游戏设计必备逻辑思路：玩家、体验、设计三种不同目标和GMT理论</a></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Input System使用指南（三） Input Action</title>
+      <link href="2022/12/06/input-system-shi-yong-zhi-nan-san-input-action/"/>
+      <url>2022/12/06/input-system-shi-yong-zhi-nan-san-input-action/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Input System使用指南（二） 直接输入</title>
       <link href="2022/12/04/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/"/>
       <url>2022/12/04/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/</url>
       
@@ -29,7 +55,7 @@
     
     
     <entry>
-      <title>Input System使用指南（一）环境配置</title>
+      <title>Input System使用指南（一） 环境配置</title>
       <link href="2022/12/04/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/"/>
       <url>2022/12/04/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/</url>
       

@@ -6,7 +6,7 @@
   <link href="https://10n31y9047.github.io/index/atom.xml" rel="self"/>
   
   <link href="https://10n31y9047.github.io/index/"/>
-  <updated>2022-12-04T12:41:38.000Z</updated>
+  <updated>2023-07-20T19:51:52.809Z</updated>
   <id>https://10n31y9047.github.io/index/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Input System使用指南（二）直接输入</title>
+    <title>游戏设计的三种理论</title>
+    <link href="https://10n31y9047.github.io/index/2023/06/27/you-xi-she-ji-de-san-chong-li-lun/"/>
+    <id>https://10n31y9047.github.io/index/2023/06/27/you-xi-she-ji-de-san-chong-li-lun/</id>
+    <published>2023-06-26T17:46:57.000Z</published>
+    <updated>2023-07-20T19:51:52.809Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;总括&quot;&gt;&lt;a href=&quot;#总括&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Input System使用指南（三） Input Action</title>
+    <link href="https://10n31y9047.github.io/index/2022/12/06/input-system-shi-yong-zhi-nan-san-input-action/"/>
+    <id>https://10n31y9047.github.io/index/2022/12/06/input-system-shi-yong-zhi-nan-san-input-action/</id>
+    <published>2022-12-05T21:20:54.000Z</published>
+    <updated>2022-12-08T09:22:09.601Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Input System使用指南（二） 直接输入</title>
     <link href="https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/"/>
     <id>https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/</id>
     <published>2022-12-03T18:35:26.000Z</published>
-    <updated>2022-12-04T12:41:38.000Z</updated>
+    <updated>2022-12-05T21:17:42.000Z</updated>
     
     
       
@@ -43,7 +77,7 @@
   </entry>
   
   <entry>
-    <title>Input System使用指南（一）环境配置</title>
+    <title>Input System使用指南（一） 环境配置</title>
     <link href="https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/"/>
     <id>https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/</id>
     <published>2022-12-03T16:22:42.000Z</published>
