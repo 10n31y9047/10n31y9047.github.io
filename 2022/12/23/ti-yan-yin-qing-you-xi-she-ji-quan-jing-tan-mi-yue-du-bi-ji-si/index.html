@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Input System使用指南（三） Input Action, 山羊的小窝">
+    <meta name="keywords" content="《体验引擎：游戏设计全景探秘》阅读笔记（四）, 山羊的小窝">
     <meta name="description" content="山羊的小窝">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Input System使用指南（三） Input Action | 山羊的小窝</title>
+    <title>《体验引擎：游戏设计全景探秘》阅读笔记（四） | 山羊的小窝</title>
     <link rel="icon" type="image/png" href="/Goat_256.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -31,8 +31,8 @@
 
 <meta name="generator" content="Hexo 5.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="山羊的小窝" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="山羊的小窝" type="application/atom+xml">
+</head>
 
 
 
@@ -323,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/media/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/media/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Input System使用指南（三） Input Action</h1>
+                    <h1 class="description center-align post-title">《体验引擎：游戏设计全景探秘》阅读笔记（四）</h1>
                 </div>
             </div>
         </div>
@@ -443,12 +443,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E4%BD%93%E9%AA%8C%E5%BC%95%E6%93%8E%EF%BC%9A%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E5%85%A8%E6%99%AF%E6%8E%A2%E7%A7%98/">
+                                <span class="chip bg-color">体验引擎：游戏设计全景探秘</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" class="post-category">
+                                阅读笔记
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -457,7 +470,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-12-06
+                    2022-12-23
                 </div>
                 
 
@@ -473,7 +486,24 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="第四章-故事"><a href="#第四章-故事" class="headerlink" title="第四章 故事"></a>第四章 故事</h1><p>游戏与电影有相似之处，游戏剧情也参考剧本的<font color="red"><u>三幕式结构</u></font>。三幕式结构指的是把一个剧本的情节分为基础介绍，故事核心，以及高潮结局三个部分。</p>
+<p>游戏开发过程可以分解为前期、研发和后期。</p>
+<p>但游戏和电影的工作机制实际上截然不同，电影可以教给我们使用屏幕的方法（取景和构图、场景构建、剧本节奏、视觉效果等），但是电影不会教我们如何交互、如何做出决定，以及体验那种身临其境的感觉。所以，大量从电影中借鉴方法其实是有风险的，因为这样做有可能会让我们忽略游戏的故事所具有的强有力的挑战和机会。</p>
+<p>当我们苦苦寻觅和故事有关的工具时，身边这些具有交互形式的事物：博物馆、美术馆、真实空间以及生活等，应该是我们最初的检验标准。这些古老的形式指出了最基本的挑战：根据玩家的选择来创作、修改和重新塑造一个故事，让它能够深化玩家所做的每一件事的意义。</p>
+<h2 id="故事叙述工具"><a href="#故事叙述工具" class="headerlink" title="故事叙述工具"></a>故事叙述工具</h2><p>故事叙述工具是一种能够在玩家的脑海中形成故事情节的装置。</p>
+<p>大多数故事性的媒体所使用的工具都极其有限，而游戏的可选项要多得多。游戏中可以：</p>
+<ol>
+<li>使用预先定制的图像和声音。</li>
+<li>使用文字。</li>
+<li>放置一些可以让玩家翻阅的画面。</li>
+<li>创造一个可以让玩家探索的空间。</li>
+</ol>
+<p>游戏还有一些独有的工具，我们可以创造一些机制，能够根据玩家的决策和反应随意地创造剧情、角色，甚至是主题。</p>
+<p>我们叙述故事的工具可以粗略地分成三个类别：<font color="red"><u>脚本故事（scripted story）、世界性故事（worldnarrative），以及浮现的故事（emergent story）。</u></font></p>
+<h2 id="脚本故事"><a href="#脚本故事" class="headerlink" title="脚本故事"></a>脚本故事</h2><p>脚本故事指的是那些嵌入游戏的事件，并且他们总是以相同的方式展示。</p>
+<p>脚本故事最基本的工具是<font color="red"><u>过场动画</u></font>，可以在其中使用所有从电影中学到的技巧。但过场动画会屏蔽所有的交互行为，破坏游戏流程。</p>
+<h3 id="软脚本"><a href="#软脚本" class="headerlink" title="软脚本"></a>软脚本</h3><p><font color="red"><u>脚本序列</u></font>是一种加入了少许控制的脚本故事。它在播放事先制作好的事件时，不会完全屏蔽与玩家交互的界面。</p>
+
             </div>
             <hr/>
 
@@ -498,7 +528,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://10n31y9047.github.io/index/2022/12/06/input-system-shi-yong-zhi-nan-san-input-action/">https://10n31y9047.github.io/index/2022/12/06/input-system-shi-yong-zhi-nan-san-input-action/</a>
+                    <a href="https://10n31y9047.github.io/index/2022/12/23/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-si/">https://10n31y9047.github.io/index/2022/12/23/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-si/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -535,7 +565,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E4%BD%93%E9%AA%8C%E5%BC%95%E6%93%8E%EF%BC%9A%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E5%85%A8%E6%99%AF%E6%8E%A2%E7%A7%98/">
+                                    <span class="chip bg-color">体验引擎：游戏设计全景探秘</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -616,13 +650,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/12/04/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/">
+                <a href="/2022/12/19/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-san/">
                     <div class="card-image">
                         
                         
-                        <img src="/media/featureimages/4.jpg" class="responsive-img" alt="Input System使用指南（二） 直接输入">
+                        <img src="/media/featureimages/16.jpg" class="responsive-img" alt="《体验引擎：游戏设计全景探秘》阅读笔记（三）">
                         
-                        <span class="card-title">Input System使用指南（二） 直接输入</span>
+                        <span class="card-title">《体验引擎：游戏设计全景探秘》阅读笔记（三）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -633,14 +667,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Unity/" class="post-category">
-                                    Unity
+                            <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    阅读笔记
                                 </a>
                             
                             
@@ -650,8 +684,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Input-System/">
-                        <span class="chip bg-color">Input System</span>
+                    <a href="/tags/%E4%BD%93%E9%AA%8C%E5%BC%95%E6%93%8E%EF%BC%9A%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E5%85%A8%E6%99%AF%E6%8E%A2%E7%A7%98/">
+                        <span class="chip bg-color">体验引擎：游戏设计全景探秘</span>
                     </a>
                     
                 </div>
