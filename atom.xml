@@ -6,7 +6,7 @@
   <link href="https://10n31y9047.github.io/index/atom.xml" rel="self"/>
   
   <link href="https://10n31y9047.github.io/index/"/>
-  <updated>2024-06-07T18:51:20.176Z</updated>
+  <updated>2024-08-28T21:17:42.000Z</updated>
   <id>https://10n31y9047.github.io/index/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Input System使用指南（二） 直接输入</title>
+    <link href="https://10n31y9047.github.io/index/2024/08/29/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/"/>
+    <id>https://10n31y9047.github.io/index/2024/08/29/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/</id>
+    <published>2024-08-28T18:35:26.000Z</published>
+    <updated>2024-08-28T21:17:42.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;与Input Manager相似，Input System也支持用代码直接获取设备的输入。&lt;/p&gt;
+&lt;h1 id=&quot;几个例子&quot;&gt;&lt;a href=&quot;#几个例子&quot; class=&quot;headerlink&quot; title=&quot;几个例子&quot;&gt;&lt;/a&gt;几个例子&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="Unity" scheme="https://10n31y9047.github.io/index/categories/Unity/"/>
+    
+    
+    <category term="Input System" scheme="https://10n31y9047.github.io/index/tags/Input-System/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Input System使用指南（一） 环境配置</title>
+    <link href="https://10n31y9047.github.io/index/2024/08/29/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/"/>
+    <id>https://10n31y9047.github.io/index/2024/08/29/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/</id>
+    <published>2024-08-28T16:22:42.000Z</published>
+    <updated>2024-08-29T12:41:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;Unity在设计之初并未预见到当下的项目需要支持如此多的平台和设备，旧的Input</summary>
+        
+      
+    
+    
+    
+    <category term="Unity" scheme="https://10n31y9047.github.io/index/categories/Unity/"/>
+    
+    
+    <category term="Input System" scheme="https://10n31y9047.github.io/index/tags/Input-System/"/>
+    
+  </entry>
   
   <entry>
     <title>游戏分析：Katana Zero（武士零）</title>
@@ -163,107 +214,6 @@
     
     
     <category term="体验引擎：游戏设计全景探秘" scheme="https://10n31y9047.github.io/index/tags/%E4%BD%93%E9%AA%8C%E5%BC%95%E6%93%8E%EF%BC%9A%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E5%85%A8%E6%99%AF%E6%8E%A2%E7%A7%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Input System使用指南（二） 直接输入</title>
-    <link href="https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/"/>
-    <id>https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/</id>
-    <published>2022-12-03T18:35:26.000Z</published>
-    <updated>2022-12-05T21:17:42.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;与Input Manager相似，Input System也支持用代码直接获取设备的输入。&lt;/p&gt;
-&lt;h1 id=&quot;几个例子&quot;&gt;&lt;a href=&quot;#几个例子&quot; class=&quot;headerlink&quot; title=&quot;几个例子&quot;&gt;&lt;/a&gt;几个例子&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Unity" scheme="https://10n31y9047.github.io/index/categories/Unity/"/>
-    
-    
-    <category term="Input System" scheme="https://10n31y9047.github.io/index/tags/Input-System/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Input System使用指南（一） 环境配置</title>
-    <link href="https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/"/>
-    <id>https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/</id>
-    <published>2022-12-03T16:22:42.000Z</published>
-    <updated>2022-12-04T12:41:45.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;Unity在设计之初并未预见到当下的项目需要支持如此多的平台和设备，所以旧的Input</summary>
-        
-      
-    
-    
-    
-    <category term="Unity" scheme="https://10n31y9047.github.io/index/categories/Unity/"/>
-    
-    
-    <category term="Input System" scheme="https://10n31y9047.github.io/index/tags/Input-System/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Blender 2.9 入门篇（二） 编辑模式</title>
-    <link href="https://10n31y9047.github.io/index/2021/01/29/blender-2.9-ru-men-pian-er-bian-ji-mo-shi/"/>
-    <id>https://10n31y9047.github.io/index/2021/01/29/blender-2.9-ru-men-pian-er-bian-ji-mo-shi/</id>
-    <published>2021-01-29T12:25:35.000Z</published>
-    <updated>2022-12-04T12:41:17.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;1-编辑模式的基本操作&quot;&gt;&lt;a href=&quot;#1-编辑模式的基本操作&quot; class=&quot;headerlink&quot; title=&quot;1. 编辑模式的基本操作&quot;&gt;&lt;/a&gt;1.</summary>
-        
-      
-    
-    
-    
-    <category term="Blender" scheme="https://10n31y9047.github.io/index/categories/Blender/"/>
-    
-    
-    <category term="Blender" scheme="https://10n31y9047.github.io/index/tags/Blender/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Blender 2.9 入门篇（一） 物体模式下的基本操作</title>
-    <link href="https://10n31y9047.github.io/index/2021/01/27/blender-2.9-ru-men-pian-yi-wu-ti-mo-shi-xia-de-ji-ben-cao-zuo/"/>
-    <id>https://10n31y9047.github.io/index/2021/01/27/blender-2.9-ru-men-pian-yi-wu-ti-mo-shi-xia-de-ji-ben-cao-zuo/</id>
-    <published>2021-01-27T06:53:47.000Z</published>
-    <updated>2022-12-04T12:41:29.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;1-基本操作&quot;&gt;&lt;a href=&quot;#1-基本操作&quot; class=&quot;headerlink&quot; title=&quot;1. 基本操作&quot;&gt;&lt;/a&gt;1.</summary>
-        
-      
-    
-    
-    
-    <category term="Blender" scheme="https://10n31y9047.github.io/index/categories/Blender/"/>
-    
-    
-    <category term="Blender" scheme="https://10n31y9047.github.io/index/tags/Blender/"/>
     
   </entry>
   

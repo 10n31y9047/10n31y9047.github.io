@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Input System使用指南（二） 直接输入</title>
+      <link href="2024/08/29/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/"/>
+      <url>2024/08/29/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/</url>
+      
+        <content type="html"><![CDATA[<p>与Input Manager相似，Input System也支持用代码直接获取设备的输入。</p><h1 id="几个例子"><a href="#几个例子" class="headerlink" title="几个例子"></a>几个例子</h1><h2 id="1-2D-Top-Down视角下的移动"><a href="#1-2D-Top-Down视角下的移动" class="headerlink" title="1. 2D Top-Down视角下的移动"></a>1. 2D Top-Down视角下的移动</h2><p>旧版代码：</p><p><img src="https://s2.loli.net/2022/12/04/1PKRvWgy94omUDp.png"></p><p>新版代码：</p><p><img src="https://s2.loli.net/2022/12/04/PilWQsMa2DrwcCI.png"></p><p>可以看到，Input System将各种输入设备单独拆开来，独立地获取某一个输入，这里的设备可以是键盘（Keyboard）、鼠标（Mouse）、手柄（Gamepad）甚至触摸屏（Touchscreen）等。</p><h2 id="2-Gamepad控制器"><a href="#2-Gamepad控制器" class="headerlink" title="2. Gamepad控制器"></a>2. Gamepad控制器</h2><p><img src="https://s2.loli.net/2022/12/05/q5iBZmyNvS2PaF3.png"></p><p>这个方法中的gamepad.buttonSouth.wasPressedThisFrame是用来判断按键在当前帧是否被按下，gamepad.buttonSouth.wasReleasedThisFrame判断按键在当前帧是否被释放。类似的属性还有很多，比如Mouse.current.position可以获取当前鼠标位置，Keyboard.current.aKey.isPressed用以判断该键是否正在被按下等。</p><h1 id="输入设备支持"><a href="#输入设备支持" class="headerlink" title="输入设备支持"></a>输入设备支持</h1><p><img src="https://s2.loli.net/2022/12/06/U8gJ5EdmDqCkVvr.png"></p><p>详情可参考<a href="https://docs.unity.cn/Packages/com.unity.inputsystem@1.3/manual/SupportedDevices.html">Unity 官方手册</a>。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Unity </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Input System </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Input System使用指南（一） 环境配置</title>
+      <link href="2024/08/29/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/"/>
+      <url>2024/08/29/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>Unity在设计之初并未预见到当下的项目需要支持如此多的平台和设备，旧的Input Manager（即UnityEngine.Input）在这些方面的使用上并不简洁舒适，在多平台以及多设备输入的处理时稍显力不从心。因此，Unity官方于2016年开始研发新一代输入系统Input System（即UnityEngine.InputSystem），截至笔者撰写此文章时，已更新到v1.7.0。</p><p>Input System实现了一个可以用任何输入设备来控制Unity中的内容的系统。它基于事件系统，将设备输入与动作逻辑分开来，通过配置映射输入信息。</p><h1 id="安装Input-System-Package"><a href="#安装Input-System-Package" class="headerlink" title="安装Input System Package"></a>安装Input System Package</h1><p>Input System需要在Unity 2019.4+版本中才能安装。</p><p>要安装Input System，你需要在Unity中打开Package Manager，更改左上角选项卡为”“Package: Unity Registry”并在列表中找到“Input System”，点击“Install”即可。</p><p><img src="https://s2.loli.net/2022/12/04/EyMcQ3A8HUSfrat.png"></p><h1 id="启用新的输入后端"><a href="#启用新的输入后端" class="headerlink" title="启用新的输入后端"></a>启用新的输入后端</h1><p>在默认状态下，Unity会启用旧的Input Manager而禁用对Input System的支持，从而保证之前的Unity项目可以正常运行。</p><p>当安装了Input System Package之后，Unity会弹出一个对话框，询问是否使用新的输入后端。如果选择“Yes”，则Unity会启用新的输入后端并自动重启编辑器。</p><p><img src="https://s2.loli.net/2022/12/04/hJ46wRb2WMcAemK.png"></p><p>你也可以随时在Project Settings里随时更改这项设置，更改后同样会自动重启编辑器。</p><p><img src="https://s2.loli.net/2022/12/04/QgE2a8d7fqYo95O.png"></p><p>注意到上图中该项设置为“Both”，这说明旧的Input Manager和新的Input System可以同时生效。</p><p>事实上，当Input System生效时，Unity会自动添加一条<code>#define ENABLE_INPUT_SYSTEM = 1</code>，而Input Manager生效时，会添加<code>#define ENABLE_LEGACY_INPUT_MANAGER = 1</code>。因为二者可以同时生效，这两个值可以同时为1.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Unity </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Input System </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>游戏分析：Katana Zero（武士零）</title>
       <link href="2024/01/06/you-xi-fen-xi-katana-zero-wu-shi-ling/"/>
       <url>2024/01/06/you-xi-fen-xi-katana-zero-wu-shi-ling/</url>
@@ -146,106 +196,6 @@
         <tags>
             
             <tag> 体验引擎：游戏设计全景探秘 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Input System使用指南（二） 直接输入</title>
-      <link href="2022/12/04/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/"/>
-      <url>2022/12/04/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/</url>
-      
-        <content type="html"><![CDATA[<p>与Input Manager相似，Input System也支持用代码直接获取设备的输入。</p><h1 id="几个例子"><a href="#几个例子" class="headerlink" title="几个例子"></a>几个例子</h1><h2 id="1-2D-Top-Down视角下的移动"><a href="#1-2D-Top-Down视角下的移动" class="headerlink" title="1. 2D Top-Down视角下的移动"></a>1. 2D Top-Down视角下的移动</h2><p>旧版代码：</p><p><img src="https://s2.loli.net/2022/12/04/1PKRvWgy94omUDp.png"></p><p>新版代码：</p><p><img src="https://s2.loli.net/2022/12/04/PilWQsMa2DrwcCI.png"></p><p>可以看到，Input System将各种输入设备单独拆开来，独立地获取某一个输入，这里的设备可以是键盘（Keyboard）、鼠标（Mouse）、手柄（Gamepad）甚至触摸屏（Touchscreen）等。</p><h2 id="2-Gamepad控制器"><a href="#2-Gamepad控制器" class="headerlink" title="2. Gamepad控制器"></a>2. Gamepad控制器</h2><p><img src="https://s2.loli.net/2022/12/05/q5iBZmyNvS2PaF3.png"></p><p>这个方法中的gamepad.buttonSouth.wasPressedThisFrame是用来判断按键在当前帧是否被按下，gamepad.buttonSouth.wasReleasedThisFrame判断按键在当前帧是否被释放。类似的属性还有很多，比如Mouse.current.position可以获取当前鼠标位置，Keyboard.current.aKey.isPressed用以判断该键是否正在被按下等。</p><h1 id="输入设备支持"><a href="#输入设备支持" class="headerlink" title="输入设备支持"></a>输入设备支持</h1><p><img src="https://s2.loli.net/2022/12/06/U8gJ5EdmDqCkVvr.png"></p><p>详情可参考<a href="https://docs.unity.cn/Packages/com.unity.inputsystem@1.3/manual/SupportedDevices.html">Unity 官方手册</a>。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Unity </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Input System </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Input System使用指南（一） 环境配置</title>
-      <link href="2022/12/04/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/"/>
-      <url>2022/12/04/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/</url>
-      
-        <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>Unity在设计之初并未预见到当下的项目需要支持如此多的平台和设备，所以旧的Input Manager（即UnityEngine.Input）在这些方面的使用上并不简洁舒适，在多平台以及多设备输入的处理时稍显力不从心。因此，Unity官方于2016年开始研发新一代输入系统Input System（即UnityEngine.InputSystem），截至笔者撰写此文章时，已经更新到v1.4.4了。</p><p>Input System实现了一个可以用任何输入设备来控制Unity中的内容的系统。它基于事件系统，将设备输入与动作逻辑分开来，通过配置映射输入信息。</p><h1 id="安装Input-System-Package"><a href="#安装Input-System-Package" class="headerlink" title="安装Input System Package"></a>安装Input System Package</h1><p>Input System需要在Unity 2019.4+版本中才能安装。</p><p>要安装Input System，你需要在Unity中打开Package Manager，更改左上角选项卡为”“Package: Unity Registry”并在列表中找到“Input System”，点击“Install”即可。</p><p><img src="https://s2.loli.net/2022/12/04/EyMcQ3A8HUSfrat.png"></p><h1 id="启用新的输入后端"><a href="#启用新的输入后端" class="headerlink" title="启用新的输入后端"></a>启用新的输入后端</h1><p>在默认状态下，Unity会启用旧的Input Manager而禁用对Input System的支持，从而保证之前的Unity项目可以正常运行。</p><p>当安装了Input System Package之后，Unity会弹出一个对话框，询问是否使用新的输入后端。如果选择“Yes”，则Unity会启用新的输入后端并自动重启编辑器。</p><p><img src="https://s2.loli.net/2022/12/04/hJ46wRb2WMcAemK.png"></p><p>你也可以随时在Project Settings里随时更改这项设置，更改后同样会自动重启编辑器。</p><p><img src="https://s2.loli.net/2022/12/04/QgE2a8d7fqYo95O.png"></p><p>注意到上图中该项设置为“Both”，这说明旧的Input Manager和新的Input System可以同时生效。</p><p>事实上，当Input System生效时，Unity会自动添加一条<code>#define ENABLE_INPUT_SYSTEM = 1</code>，而Input Manager生效时，会添加<code>#define ENABLE_LEGACY_INPUT_MANAGER = 1</code>。因为二者可以同时生效，这两个值可以同时为1.</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Unity </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Input System </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Blender 2.9 入门篇（二） 编辑模式</title>
-      <link href="2021/01/29/blender-2.9-ru-men-pian-er-bian-ji-mo-shi/"/>
-      <url>2021/01/29/blender-2.9-ru-men-pian-er-bian-ji-mo-shi/</url>
-      
-        <content type="html"><![CDATA[<h1 id="1-编辑模式的基本操作"><a href="#1-编辑模式的基本操作" class="headerlink" title="1. 编辑模式的基本操作"></a>1. 编辑模式的基本操作</h1><p>在物体模式下按<code>Tab</code>键进入编辑模式。</p><p>点模式：<code>1</code></p><p>边模式：<code>2</code></p><p>面模式：<code>3</code></p><p>按住<code>Shift</code>可以选择多重模式。</p><p>循环选择：<code>Alt+鼠标左键点击</code></p><p>并排选择：<code>Ctrl+Alt+鼠标左键点击</code></p><p>在左上的选择菜单里有更多的选择方式。</p><h1 id="2-挤出工具"><a href="#2-挤出工具" class="headerlink" title="2. 挤出工具"></a>2. 挤出工具</h1><p>挤出一般是对面进行操作。</p><h2 id="2-1-挤出区域"><a href="#2-1-挤出区域" class="headerlink" title="2.1 挤出区域"></a>2.1 挤出区域</h2><p>沿平均法线方向挤出区域。</p><p>快捷键：<code>Shift+空格,E</code></p><h2 id="2-2-挤出流形"><a href="#2-2-挤出流形" class="headerlink" title="2.2 挤出流形"></a>2.2 挤出流形</h2><p>沿某方向挤出，消除挤出过程中在同一平面上产生的边以及新的边上与原有物体相交的部分。</p><p>快捷键：<code>Shift+空格,9</code></p><h2 id="2-3-沿法线挤出"><a href="#2-3-沿法线挤出" class="headerlink" title="2.3 沿法线挤出"></a>2.3 沿法线挤出</h2><p>沿局部法线方向挤出。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Blender </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Blender </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Blender 2.9 入门篇（一） 物体模式下的基本操作</title>
-      <link href="2021/01/27/blender-2.9-ru-men-pian-yi-wu-ti-mo-shi-xia-de-ji-ben-cao-zuo/"/>
-      <url>2021/01/27/blender-2.9-ru-men-pian-yi-wu-ti-mo-shi-xia-de-ji-ben-cao-zuo/</url>
-      
-        <content type="html"><![CDATA[<h1 id="1-基本操作"><a href="#1-基本操作" class="headerlink" title="1. 基本操作"></a>1. 基本操作</h1><p>打开添加物体快捷菜单：<code>Shift+A</code>，也可以使用左上的添加菜单。</p><h1 id="2-视图"><a href="#2-视图" class="headerlink" title="2. 视图"></a>2. 视图</h1><p>切换正交视角/透视视角：<code>小键盘5</code></p><p>切换摄像机视角：<code>小键盘0</code></p><p><strong>平移视角：<code>Shift+鼠标中键</code></strong></p><p>缩放视角：<code>鼠标滚轮</code></p><p>旋转视角：<code>鼠标中键</code></p><p>打开视图快捷菜单：<code>波浪号（~）</code>，若要快速切换视图只需按住<code>~</code>后将鼠标移动到相应标签上再松开<code>~</code>即可。</p><p>切换用户透视/四视图：<code>Ctrl+Alt+Q</code></p><h1 id="3-选择"><a href="#3-选择" class="headerlink" title="3. 选择"></a>3. 选择</h1><p><strong>打开快捷菜单：<code>Shift+空格</code></strong></p><p>框选：<code>Shift+空格,B</code></p><p>刷选：<code>Shift+空格,C</code></p><p>套索：<code>Shift+空格,L</code></p><p>选择工具循环切换：<code>W</code></p><p>全选：<code>A</code></p><p>取消全选：<code>双击A</code> 或 <code>Alt+A</code></p><h1 id="4-3D游标"><a href="#4-3D游标" class="headerlink" title="4. 3D游标"></a>4. 3D游标</h1><p><img src="https://i.loli.net/2021/01/29/jzt8GloQBswWMug.png"></p><p>上图中的小圆圈即为3D游标，新添加的物体会被创建在当前游标的的位置。</p><p>重置游标位置：<code>Shift+C</code></p><p>吸附快捷菜单：<code>Shift+S</code></p><h1 id="5-移动、旋转与缩放"><a href="#5-移动、旋转与缩放" class="headerlink" title="5. 移动、旋转与缩放"></a>5. 移动、旋转与缩放</h1><p>在右上角的视图Gizmo菜单中勾选移动、旋转和缩放，选中物体时就会显示移动、旋转与缩放的辅助系统。</p><p><img src="https://i.loli.net/2021/01/29/hdOxc1DvmkfTtgM.png"></p><p><img src="https://i.loli.net/2021/01/28/ekruWpMioxKDJzP.png"></p><p>移动：<code>G</code></p><p>旋转：<code>R</code></p><p>缩放：<code>S</code></p><p>沿X轴移动：<code>G,X</code>，对于Y、Z轴或旋转、缩放同理</p><p>沿XY平面移动：<code>G,Shift+Z</code>，对于YZ、XZ平面或旋转、缩放同理</p><p>精细数值控制移动、旋转与缩放：按<code>N</code>打开属性栏，调整其中的数值</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Blender </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Blender </tag>
             
         </tags>
       

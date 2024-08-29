@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Input System使用指南（二） 直接输入, 山羊的小窝">
+    <meta name="keywords" content="Input System使用指南（一） 环境配置, 山羊的小窝">
     <meta name="description" content="山羊的小窝">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Input System使用指南（二） 直接输入 | 山羊的小窝</title>
+    <title>Input System使用指南（一） 环境配置 | 山羊的小窝</title>
     <link rel="icon" type="image/png" href="/Goat_256.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -323,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/media/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/media/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Input System使用指南（二） 直接输入</h1>
+                    <h1 class="description center-align post-title">Input System使用指南（一） 环境配置</h1>
                 </div>
             </div>
         </div>
@@ -470,7 +470,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-12-04
+                    2024-08-29
                 </div>
                 
 
@@ -486,16 +486,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>与Input Manager相似，Input System也支持用代码直接获取设备的输入。</p>
-<h1 id="几个例子"><a href="#几个例子" class="headerlink" title="几个例子"></a>几个例子</h1><h2 id="1-2D-Top-Down视角下的移动"><a href="#1-2D-Top-Down视角下的移动" class="headerlink" title="1. 2D Top-Down视角下的移动"></a>1. 2D Top-Down视角下的移动</h2><p>旧版代码：</p>
-<p><img src="https://s2.loli.net/2022/12/04/1PKRvWgy94omUDp.png"></p>
-<p>新版代码：</p>
-<p><img src="https://s2.loli.net/2022/12/04/PilWQsMa2DrwcCI.png"></p>
-<p>可以看到，Input System将各种输入设备单独拆开来，独立地获取某一个输入，这里的设备可以是键盘（Keyboard）、鼠标（Mouse）、手柄（Gamepad）甚至触摸屏（Touchscreen）等。</p>
-<h2 id="2-Gamepad控制器"><a href="#2-Gamepad控制器" class="headerlink" title="2. Gamepad控制器"></a>2. Gamepad控制器</h2><p><img src="https://s2.loli.net/2022/12/05/q5iBZmyNvS2PaF3.png"></p>
-<p>这个方法中的gamepad.buttonSouth.wasPressedThisFrame是用来判断按键在当前帧是否被按下，gamepad.buttonSouth.wasReleasedThisFrame判断按键在当前帧是否被释放。类似的属性还有很多，比如Mouse.current.position可以获取当前鼠标位置，Keyboard.current.aKey.isPressed用以判断该键是否正在被按下等。</p>
-<h1 id="输入设备支持"><a href="#输入设备支持" class="headerlink" title="输入设备支持"></a>输入设备支持</h1><p><img src="https://s2.loli.net/2022/12/06/U8gJ5EdmDqCkVvr.png"></p>
-<p>详情可参考<a target="_blank" rel="noopener" href="https://docs.unity.cn/Packages/com.unity.inputsystem@1.3/manual/SupportedDevices.html">Unity 官方手册</a>。</p>
+                <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>Unity在设计之初并未预见到当下的项目需要支持如此多的平台和设备，旧的Input Manager（即UnityEngine.Input）在这些方面的使用上并不简洁舒适，在多平台以及多设备输入的处理时稍显力不从心。因此，Unity官方于2016年开始研发新一代输入系统Input System（即UnityEngine.InputSystem），截至笔者撰写此文章时，已更新到v1.7.0。</p>
+<p>Input System实现了一个可以用任何输入设备来控制Unity中的内容的系统。它基于事件系统，将设备输入与动作逻辑分开来，通过配置映射输入信息。</p>
+<h1 id="安装Input-System-Package"><a href="#安装Input-System-Package" class="headerlink" title="安装Input System Package"></a>安装Input System Package</h1><p>Input System需要在Unity 2019.4+版本中才能安装。</p>
+<p>要安装Input System，你需要在Unity中打开Package Manager，更改左上角选项卡为”“Package: Unity Registry”并在列表中找到“Input System”，点击“Install”即可。</p>
+<p><img src="https://s2.loli.net/2022/12/04/EyMcQ3A8HUSfrat.png"></p>
+<h1 id="启用新的输入后端"><a href="#启用新的输入后端" class="headerlink" title="启用新的输入后端"></a>启用新的输入后端</h1><p>在默认状态下，Unity会启用旧的Input Manager而禁用对Input System的支持，从而保证之前的Unity项目可以正常运行。</p>
+<p>当安装了Input System Package之后，Unity会弹出一个对话框，询问是否使用新的输入后端。如果选择“Yes”，则Unity会启用新的输入后端并自动重启编辑器。</p>
+<p><img src="https://s2.loli.net/2022/12/04/hJ46wRb2WMcAemK.png"></p>
+<p>你也可以随时在Project Settings里随时更改这项设置，更改后同样会自动重启编辑器。</p>
+<p><img src="https://s2.loli.net/2022/12/04/QgE2a8d7fqYo95O.png"></p>
+<p>注意到上图中该项设置为“Both”，这说明旧的Input Manager和新的Input System可以同时生效。</p>
+<p>事实上，当Input System生效时，Unity会自动添加一条<code>#define ENABLE_INPUT_SYSTEM = 1</code>，而Input Manager生效时，会添加<code>#define ENABLE_LEGACY_INPUT_MANAGER = 1</code>。因为二者可以同时生效，这两个值可以同时为1.</p>
 
             </div>
             <hr/>
@@ -521,7 +523,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/">https://10n31y9047.github.io/index/2022/12/04/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/</a>
+                    <a href="https://10n31y9047.github.io/index/2024/08/29/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/">https://10n31y9047.github.io/index/2024/08/29/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -606,13 +608,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/12/04/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-yi/">
+                <a href="/2024/08/29/input-system-shi-yong-zhi-nan-er-zhi-jie-shu-ru/">
                     <div class="card-image">
                         
                         
-                        <img src="/media/featureimages/7.jpg" class="responsive-img" alt="《体验引擎：游戏设计全景探秘》阅读笔记（一）">
+                        <img src="/media/featureimages/4.jpg" class="responsive-img" alt="Input System使用指南（二） 直接输入">
                         
-                        <span class="card-title">《体验引擎：游戏设计全景探秘》阅读笔记（一）</span>
+                        <span class="card-title">Input System使用指南（二） 直接输入</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -623,57 +625,8 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-04
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-08-29
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    阅读笔记
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%BD%93%E9%AA%8C%E5%BC%95%E6%93%8E%EF%BC%9A%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E5%85%A8%E6%99%AF%E6%8E%A2%E7%A7%98/">
-                        <span class="chip bg-color">体验引擎：游戏设计全景探秘</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/12/04/input-system-shi-yong-zhi-nan-yi-huan-jing-pei-zhi/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/media/featureimages/14.jpg" class="responsive-img" alt="Input System使用指南（一） 环境配置">
-                        
-                        <span class="card-title">Input System使用指南（一） 环境配置</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-04
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -691,6 +644,55 @@
                     
                     <a href="/tags/Input-System/">
                         <span class="chip bg-color">Input System</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/01/06/you-xi-fen-xi-katana-zero-wu-shi-ling/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/media/featureimages/1.jpg" class="responsive-img" alt="游戏分析：Katana Zero（武士零）">
+                        
+                        <span class="card-title">游戏分析：Katana Zero（武士零）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-06
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%B8%B8%E6%88%8F/" class="post-category">
+                                    游戏
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%B8%B8%E6%88%8F%E5%88%86%E6%9E%90/">
+                        <span class="chip bg-color">游戏分析</span>
                     </a>
                     
                 </div>
