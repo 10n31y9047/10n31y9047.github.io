@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="《体验引擎：游戏设计全景探秘》阅读笔记（二）, 山羊的小窝">
+    <meta name="keywords" content="Unity中常用的生命周期函数, 山羊的小窝">
     <meta name="description" content="山羊的小窝">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>《体验引擎：游戏设计全景探秘》阅读笔记（二） | 山羊的小窝</title>
+    <title>Unity中常用的生命周期函数 | 山羊的小窝</title>
     <link rel="icon" type="image/png" href="/Goat_256.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -323,12 +323,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/media/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/media/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">《体验引擎：游戏设计全景探秘》阅读笔记（二）</h1>
+                    <h1 class="description center-align post-title">Unity中常用的生命周期函数</h1>
                 </div>
             </div>
         </div>
@@ -443,25 +443,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E4%BD%93%E9%AA%8C%E5%BC%95%E6%93%8E%EF%BC%9A%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E5%85%A8%E6%99%AF%E6%8E%A2%E7%A7%98/">
-                                <span class="chip bg-color">体验引擎：游戏设计全景探秘</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" class="post-category">
-                                阅读笔记
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -470,7 +457,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-12-12
+                    2025-02-28
                 </div>
                 
 
@@ -486,43 +473,234 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><font color="red" size="7"> 第二部分 游戏制作</font></p>
-<blockquote>
-<p>我们并不能通过一本书而精通游戏设计，因为游戏设计需要经验的积累。</p>
-<p>学习游戏设计的最佳方法是，研究那些细微的和独立的改变所产生的效果。</p>
-</blockquote>
-<h1 id="第二章-优雅"><a href="#第二章-优雅" class="headerlink" title="第二章 优雅"></a>第二章 优雅</h1><blockquote>
-<p>从某种程度而言，所有游戏早已存在于世界之中。它们就在那里，隐藏在宇宙万物的逻辑之中。我们并没有创造它们，我们只是发现了它们，就像雕塑家在一块大理石中发现雕像那样：并不需要增加什么，而是通过去掉多余的材质，展现其真正面貌。</p>
-<p>良好的游戏设计意味着最大化情感力量和多样的游戏体验，同时最小化玩家的理解成本和游戏开发成本。这种高效的形式我们称之为<font color="red"><u>“优雅”（elegance）</u></font>。</p>
-</blockquote>
-<h2 id="浮现的优雅"><a href="#浮现的优雅" class="headerlink" title="浮现的优雅"></a>浮现的优雅</h2><p><font color="red"><u>浮现（emergence）</u></font>指的是通过简单机制的交互而创造出各种复杂情况的时刻。</p>
-<p><font color="red"><u>促进浮现</u></font>指的是精心打造一些游戏机制，这些机制并不是简单叠加在一起，而是能够通过相互作用引发大量可能的体验。</p>
-<p>当各种机制通过复杂并且不明显的方式交互的时候，游戏的设计就会变得优雅。但是这种复杂性和不明显性也使得实现优雅的设计非常困难。</p>
-<h2 id="我喜欢在早晨闻到优雅的味道"><a href="#我喜欢在早晨闻到优雅的味道" class="headerlink" title="我喜欢在早晨闻到优雅的味道"></a>我喜欢在早晨闻到优雅的味道</h2><p><font color="red"><u>嗅出优雅</u></font>虽然是一种需要经验的技巧，但是它还是有一些简单规律可循的。</p>
+                <p>下图为<strong>Unity脚本生命周期流程图</strong>，图源：<a target="_blank" rel="noopener" href="https://docs.unity.cn/cn/2023.2/Manual/ExecutionOrder.html">Unity官方手册</a><br><img src="https://s2.loli.net/2025/02/28/D1A9pxgwWj6tq8B.png" alt="monobehaviour_flowchart.png"></p>
+<p>由图可知，Unity生命周期包含几个主要阶段：初始化阶段（Initialization），物理与输入阶段（Physics+Input Events），游戏逻辑更新（Game Logic），渲染与界面（Scene Rendering+Gizmo Rendering+GUI Rendering），结束与清理（Decommissioning）。</p>
+<h1 id="初始化阶段"><a href="#初始化阶段" class="headerlink" title="初始化阶段"></a>初始化阶段</h1><h2 id="1-Awake"><a href="#1-Awake" class="headerlink" title="1.Awake()"></a>1.Awake()</h2><h5 id="触发时机："><a href="#触发时机：" class="headerlink" title="触发时机："></a>触发时机：</h5><p>当 GameObject 激活且脚本实例化时立即调用，无论脚本自身是否启用。Awake()在脚本生命周期中只会被调用一次。</p>
+<h5 id="用途："><a href="#用途：" class="headerlink" title="用途："></a>用途：</h5><p>初始化与脚本状态无关的变量或引用（如 GetComponent），但依赖 GameObject 的激活状态。</p>
+<h2 id="2-OnEnable"><a href="#2-OnEnable" class="headerlink" title="2.OnEnable()"></a>2.OnEnable()</h2><h5 id="触发时机：-1"><a href="#触发时机：-1" class="headerlink" title="触发时机："></a>触发时机：</h5><p>当 GameObject 处于激活状态（activeInHierarchy == true）且脚本组件被启用（enabled == true）时触发，包括以下场景：</p>
+<ul>
+<li><p>GameObject 从非激活变为激活状态（SetActive(true)）。</p>
+</li>
+<li><p>脚本组件从禁用变为启用状态（enabled = true）。</p>
+</li>
+</ul>
+<p>每当条件满足时调用一次OnEnable()，即OnEnable可能被多次调用。</p>
+<h5 id="用途：-1"><a href="#用途：-1" class="headerlink" title="用途："></a>用途：</h5><ul>
+<li><p>注册事件或回调（确保对象激活时能接收通知）。</p>
+</li>
+<li><p>启动或重启协程（需手动调用 StartCoroutine()）。</p>
+</li>
+<li><p>重置临时状态或数据。</p>
+</li>
+</ul>
+<h2 id="3-Start"><a href="#3-Start" class="headerlink" title="3.Start()"></a>3.Start()</h2><h5 id="触发时机：-2"><a href="#触发时机：-2" class="headerlink" title="触发时机："></a>触发时机：</h5><ul>
+<li><p>当 GameObject 激活且脚本启用时，在首次 Update() 前调用，仅执行一次。</p>
+</li>
+<li><p>所有 Awake() 方法（包括其他对象）已执行完毕，但不同脚本的 Start() 执行顺序未定义。</p>
+</li>
+</ul>
+<h5 id="用途：-2"><a href="#用途：-2" class="headerlink" title="用途："></a>用途：</h5><ul>
+<li><p>初始化依赖其他对象或组件的逻辑（需确保依赖对象的初始化在 Awake() 中完成）。</p>
+</li>
+<li><p>执行单次设置（如游戏初始状态配置）。</p>
+</li>
+</ul>
+<h1 id="物理与输入阶段"><a href="#物理与输入阶段" class="headerlink" title="物理与输入阶段"></a>物理与输入阶段</h1><h2 id="1-FixedUpdate"><a href="#1-FixedUpdate" class="headerlink" title="1.FixedUpdate()"></a>1.FixedUpdate()</h2><h5 id="触发时机：-3"><a href="#触发时机：-3" class="headerlink" title="触发时机："></a>触发时机：</h5><ul>
+<li><p>按固定时间间隔（默认 0.02 秒）触发，与帧率无关。该值可在 Unity 的 Project Settings → Time → Fixed Timestep 中调整。</p>
+</li>
+<li><p>可能在一帧内多次调用以同步物理时间（如帧率过低时）。</p>
+</li>
+<li><p>触发顺序通常早于 Update()，但具体取决于物理计算需求。</p>
+</li>
+</ul>
+<h5 id="用途：-3"><a href="#用途：-3" class="headerlink" title="用途："></a>用途：</h5><ul>
+<li><p>处理所有与物理引擎相关的操作（如 Rigidbody 控制、力的施加）。</p>
+</li>
+<li><p>执行需要严格按固定时间步长更新的逻辑（如回合制计时）。</p>
+</li>
+</ul>
+<h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><ul>
+<li><p>避免耗时操作，确保物理模拟流畅性。</p>
+</li>
+<li><p>物理属性修改（如速度、力）应在此完成，而非 Update()。</p>
+</li>
+<li><p>输入检测需在 Update() 中处理，再传递至 FixedUpdate()。</p>
+</li>
+</ul>
+<h2 id="2-物理事件（如OnCollisionEnter-OnTriggerEnter-）"><a href="#2-物理事件（如OnCollisionEnter-OnTriggerEnter-）" class="headerlink" title="2.物理事件（如OnCollisionEnter(), OnTriggerEnter()）"></a>2.物理事件（如OnCollisionEnter(), OnTriggerEnter()）</h2><h5 id="触发时机：-4"><a href="#触发时机：-4" class="headerlink" title="触发时机："></a>触发时机：</h5><p>在物理引擎完成每步计算后触发，紧随 FixedUpdate() 之后，可能在一帧内多次触发（若多次调用 FixedUpdate()）。</p>
+<p>具体顺序：FixedUpdate() → 物理引擎更新 → OnCollision/TriggerXXX() → Update()</p>
+<h5 id="用途：-4"><a href="#用途：-4" class="headerlink" title="用途："></a>用途：</h5><ul>
+<li><p>OnCollisionEnter()：响应物理碰撞（如伤害计算、音效播放），需双方 Collider 未标记为 Trigger。</p>
+</li>
+<li><p>OnTriggerEnter()：检测物体进入触发区域（如收集品、陷阱），需至少一方 Collider 标记为 Trigger。</p>
+</li>
+<li><p>OnCollisionStay()/OnTriggerStay()：持续碰撞/触发时每帧调用。</p>
+</li>
+<li><p>OnCollisionExit()/OnTriggerExit()：碰撞/触发结束时调用。</p>
+</li>
+</ul>
+<h3 id="注意事项：-1"><a href="#注意事项：-1" class="headerlink" title="注意事项："></a>注意事项：</h3><ul>
+<li><p>确保至少一个物体带有 Rigidbody（触发器可接受运动学 Rigidbody）。</p>
+</li>
+<li><p>避免在物理事件中执行耗时操作，必要时使用缓存或协程。</p>
+</li>
+<li><p>通过碰撞矩阵优化检测，减少不必要的交互。</p>
+</li>
+</ul>
+<h2 id="3-输入事件（如OnMouseXXX-）"><a href="#3-输入事件（如OnMouseXXX-）" class="headerlink" title="3.输入事件（如OnMouseXXX()）"></a>3.输入事件（如OnMouseXXX()）</h2><h5 id="触发时机：-5"><a href="#触发时机：-5" class="headerlink" title="触发时机："></a>触发时机：</h5><p>以OnMouseDown()为例，Unity 通过射线检测判断鼠标点击是否落在目标 Collider 上，若满足条件，OnMouseDown()在鼠标按下（Button Down）的同一帧触发。</p>
+<h5 id="用途：-5"><a href="#用途：-5" class="headerlink" title="用途："></a>用途：</h5><ul>
+<li><p>点击选择物体（如拾取道具、选中角色）。</p>
+</li>
+<li><p>触发点击动画或音效（如按钮反馈）。</p>
+</li>
+</ul>
+<h1 id="游戏逻辑更新"><a href="#游戏逻辑更新" class="headerlink" title="游戏逻辑更新"></a>游戏逻辑更新</h1><h2 id="1-Update"><a href="#1-Update" class="headerlink" title="1.Update()"></a>1.Update()</h2><h5 id="触发时机：-6"><a href="#触发时机：-6" class="headerlink" title="触发时机："></a>触发时机：</h5><ul>
+<li><p>每帧调用一次：Update() 的调用频率与游戏帧率（FPS）直接相关。例如，若帧率为 60 FPS，则每秒调用 60 次。</p>
+</li>
+<li><p>帧率依赖性：由于调用间隔不固定（由 Time.deltaTime 表示），需通过时间增量来平滑逻辑（如移动速度），避免帧率波动导致行为不一致。</p>
+</li>
+</ul>
+<h5 id="用途：-6"><a href="#用途：-6" class="headerlink" title="用途："></a>用途：</h5><p>非物理游戏逻辑，例如：</p>
+<ul>
+<li><p>输入检测：轮询键盘、鼠标或触摸输入（如 Input.GetKeyDown）。</p>
+</li>
+<li><p>动画控制：更新角色动画状态或 UI 动画。</p>
+</li>
+<li><p>状态管理：处理游戏逻辑的实时状态切换（如技能冷却、AI 决策）。</p>
+</li>
+<li><p>Transform 操作：直接修改物体的位置、旋转或缩放（如非物理驱动的移动）。</p>
+</li>
+</ul>
+<p>避免高开销操作：</p>
+<ul>
+<li><p>减少在 Update() 中执行复杂计算（如物理射线检测、资源加载）。</p>
+</li>
+<li><p>使用标志位或缓存机制优化高频逻辑（如利用标志位设置每5帧执行一次）。</p>
+</li>
+</ul>
+<h2 id="2-LateUpdate"><a href="#2-LateUpdate" class="headerlink" title="2.LateUpdate()"></a>2.LateUpdate()</h2><h5 id="触发时机：-7"><a href="#触发时机：-7" class="headerlink" title="触发时机："></a>触发时机：</h5><ul>
+<li><p>严格顺序：LateUpdate() 在 同一帧内所有 Update() 方法执行完毕后调用，包括其他脚本的 Update()。</p>
+</li>
+<li><p>帧率依赖：与 Update() 相同，调用频率取决于游戏帧率（FPS），每帧调用一次。</p>
+</li>
+</ul>
+<h5 id="用途：-7"><a href="#用途：-7" class="headerlink" title="用途："></a>用途：</h5><ul>
+<li><p>摄像机跟随：确保摄像机更新发生在玩家/目标物体的位置计算之后，避免画面抖动。</p>
+</li>
+<li><p>依赖其他对象最终状态的逻辑：</p>
+<ul>
+<li><p>UI 元素对齐：在物体位置更新后调整 UI 的屏幕坐标（如血条跟随角色）。</p>
+</li>
+<li><p>物理模拟后的处理：如记录物体移动轨迹（需基于最终位置）。</p>
+</li>
+</ul>
+</li>
+<li><p>渲染前的最后调整，材质或光照更新：根据场景状态动态修改渲染参数（如雾效强度）。</p>
+</li>
+<li><p>跨脚本顺序控制，确保数据同步：若 Script A 的 Update() 修改数据，Script B 的 LateUpdate() 可安全使用该数据。</p>
+</li>
+</ul>
+<h1 id="渲染与界面"><a href="#渲染与界面" class="headerlink" title="渲染与界面"></a>渲染与界面</h1><h2 id="1-渲染事件（OnBecameVisible-，OnBecameInvisible-，OnRenderObject-等）"><a href="#1-渲染事件（OnBecameVisible-，OnBecameInvisible-，OnRenderObject-等）" class="headerlink" title="1.渲染事件（OnBecameVisible()，OnBecameInvisible()，OnRenderObject()等）"></a>1.渲染事件（OnBecameVisible()，OnBecameInvisible()，OnRenderObject()等）</h2><h5 id="触发时机：-8"><a href="#触发时机：-8" class="headerlink" title="触发时机："></a>触发时机：</h5><ul>
+<li><p>与摄像机渲染流程强相关：</p>
+<ul>
+<li><p>所有事件均围绕摄像机的渲染管线阶段触发，例如：</p>
+<p>  渲染前：OnPreRender()、OnWillRenderObject()</p>
+<p>  渲染中：OnRenderObject()</p>
+<p>  渲染后：OnPostRender()、OnRenderImage()</p>
+<p>  可见性变化：OnBecameVisible()、OnBecameInvisible()</p>
+</li>
+<li><p>事件触发顺序严格遵循Unity的渲染生命周期逻辑。</p>
+</li>
+</ul>
+</li>
+<li><p>依赖对象的渲染状态：</p>
+<p>  OnBecameVisible()/OnBecameInvisible() 依赖对象的Renderer组件激活性改变。</p>
+<p>  OnWillRenderObject()仅在对象被摄像机实际渲染前触发。</p>
+<p>  OnPreRender()、OnPostRender()、OnRenderImage()需绑定到摄像机对象。</p>
+</li>
+<li><p>帧率依赖性：</p>
+<p>  所有事件均在每帧的渲染阶段触发。</p>
+</li>
+</ul>
+<h5 id="用途：-8"><a href="#用途：-8" class="headerlink" title="用途："></a>用途：</h5><ul>
+<li><p>性能优化：</p>
+<p>  OnBecameVisible()/OnBecameInvisible()：动态管理不可见对象的资源（如禁用粒子效果）。</p>
+<p>  OnPreRender()/OnPostRender()：控制摄像机渲染目标，减少冗余计算。</p>
+</li>
+<li><p>自定义渲染逻辑：</p>
+<p>  OnRenderObject()：手动绘制几何体（如调试线框）。</p>
+<p>  OnRenderImage()：实现后处理效果（如模糊、调色）。</p>
+<p>  OnWillRenderObject()：逐摄像机修改材质属性（如动态 LOD）。</p>
+</li>
+<li><p>资源管理：</p>
+<p>  按需加载/卸载资源（如OnBecameVisible()加载高清纹理）。</p>
+<p>  清理临时渲染资源（如OnPostRender()释放 RenderTexture）。</p>
+<h2 id="2-OnDrawGizmos"><a href="#2-OnDrawGizmos" class="headerlink" title="2.OnDrawGizmos()"></a>2.OnDrawGizmos()</h2></li>
+</ul>
+<p>OnDrawGizmos()是个特殊的生命周期函数，仅在编辑器模式下生效。</p>
+<h5 id="触发时机：-9"><a href="#触发时机：-9" class="headerlink" title="触发时机："></a>触发时机：</h5><ul>
+<li><p>当场景视图发生以下操作时，OnDrawGizmos() 会被调用：</p>
 <ol>
-<li><b>和多数其他游戏机制交互的那些游戏机制有可能是优雅的。</b>如果这个机制和许多其他机制都有交互，那么它很有可能是优雅的设计。如果它只和一两个机制有交互，那么有可能就不是。</li>
-<li><b>简单的机制有可能是优雅的。</b>优雅意味着减少游戏机制的开销，以及增加游戏机制的收益。简化机制可能意味着会失去游戏中的一些细节，但是也为其他更高效的设计打开了一片想象的空间。通过减少游戏机制的复杂度，玩家反而可以欣赏更多其余的内容。而最有可能是优雅的机制的那些机制都简单得要命，你甚至只消听一遍就能完全明白。</li>
-<li><b>能够以多种方式使用的机制有可能是优雅的。</b>一个具有创意，同时兼具攻击性、防御性、策略性、战术性的工具比只有一种功能的工具更优雅。这么说不仅是因为它有多种交互方式，还因为将这些不同的功能组合在一起，能够为游戏创造出新的选择和联系。</li>
-<li><b>与其他机制作用不重复的那些机制有可能是优雅的。</b><font color="red"><u>作用（role）</u></font>指的是一种使用机制的方式。那些最优雅的机制所具备的功能非常独特，它们会为游戏带来一些全新的玩法。不要总是在已经存在的交互上创造变化，应该寻求一些能够带来新的探索策略或者方向、以前从来没有出现过的机制。</li>
-<li><b>对已建立的用户习惯和界面重复利用的机制可能是优雅的，因为它们利用了玩家已经掌握的知识。</b>我们可以通过使用玩家已知的符号和习惯来减少其理解游戏的成本。这些习惯可以来自任何地方，比如<u>游戏中的其他系统、其他游戏、现实生活、文化原型</u>等等。只要玩家已经知道这些东西，我们就可以使用它们，并从中获益。每个人都想打破陈规，并且表达自己的创意。但是创造新的习惯不仅会影响设计师，同时也会影响玩家。如果真的要这么做，就必须确保什么时候值得我们这么做，而不是没有任何理由就随意改变一个已经存在的、良好的用户习惯。真正的原创性并非来自于表面细节的改变，而是来自于根基的改变。</li>
-<li><b>和已存在的机制规模相类似的那些机制有可能是优雅的。</b>几乎任何可衡量的数值之间都可以运用这种通过匹配规模而浮现的优雅。诸如<u>大小、速度、面积、生命值、距离、金钱、能量、数据传输、资源、时间、玩家或者角色的数量</u>等，都有可能通过规模匹配而浮现出优雅。</li>
-<li><b>频繁地重复使用的机制有可能是优雅的。</b>同一个游戏机制所带来的体验每一次都不尽相同。机制的这种重复性也是优雅设计的一个基础。重复性并不能保证机制的优雅性，但是如果缺少了重复性，优雅也就无从谈起。</li>
-<li><b>不对游戏内容施加限制的机制有可能是优雅的。</b>一个带有内容局限性的设计能够立即产生让人印象深刻的设计效果，并且在原型开发时也感觉良好，测试时也没有问题，大家对设计都非常满意。这种收益效果是立刻就能看到的，但是背后所付出的开销却要延续长达数年的时间，并且会影响到其他的方面。类似这样的内容局限性有成百上千种之多。比如<u>跳跃的距离、房间的高度、角色的数量、资源的多少、对话的长度、背包的容量，以及车子的尺寸</u>都可能受制于游戏设计方面的限制。 优雅的机制能够在不产生这种隐蔽开销的前提下改善一个游戏。如果一个机制迫使游戏的其他部分必须做出调整的话，即使是一个很好的机制，也不值得我们去实现它。</li>
-<li><b>能够充分利用已有界面表现能力的那些机制有可能是优雅的。</b>但是这样做的危险在于，可能会由于过于敏感的输入方式而让玩家感觉受挫。只有当所有的输入方式对于有经验的玩家来说是有用的，同时大多数输入方式又可以被新手玩家所忽略的时候，这种丰富的操控方法才会运转良好。</li>
+<li><p>摄像机移动、旋转或缩放。</p>
+</li>
+<li><p>对象被选中或取消选中。</p>
+</li>
+<li><p>场景视图的任意更新（如脚本修改对象属性）。</p>
+</li>
 </ol>
-<h2 id="优雅设计案例：掠夺者VS-恶火"><a href="#优雅设计案例：掠夺者VS-恶火" class="headerlink" title="优雅设计案例：掠夺者VS. 恶火"></a>优雅设计案例：掠夺者VS. 恶火</h2><p>《星际争霸2：自由之翼》（StarCraft Ⅱ: Wingsof Liberty）这个游戏中的两个人族单位：掠夺者（Predator）和恶火（Hellion）。</p>
-<p><img src="https://s2.loli.net/2021/12/19/6VyQvNiYhGcmqfr.jpg"></p>
-<p>两者最主要的区别在于攻击范围的形状。虽然它们都可以进行范围攻击，但是掠夺者的攻击范围是以自身为中心的圆形区域，而恶火的攻击范围是一条又长又窄的直线。这一点最终成为了两者之间的巨大区别（如下图所示）。</p>
-<p><img src="https://s2.loli.net/2021/12/19/38FVARXt4BkwTZr.jpg"><img src="https://s2.loli.net/2021/12/19/ANE9HDpi8xXgPzY.jpg"></p>
-<p>掠夺者的使用有几种方法。效果最好的一种是在被敌人包围时使用它，因为这时它的范围性攻击就可攻击到所有的敌人。但是这种情况非常少见，因为其他玩家可以根本就不发起攻击。掠夺者也可以主动攻击大批量的敌人群体，只是大部分敌人都不会被它的圆形攻击波所击中。最后，掠夺者可以冲进一群敌人之中，然后试图利用自己的圆形攻击范围来打击敌人。除了这些以外，掠夺者几乎没有其他好用的方法了。它的攻击范围较小，这意味着它不能躲在其他单位后面发起攻击，也不能攻击位于高处的敌人，并且它和其他友军单位也很少能够形成有效的配合。所以每一次使用掠夺者时，可使用的策略都屈指可数。</p>
-<p>而恶火就不一样了。<u>直线型的攻击范围意味着，攻击效果取决于地形和敌人的排列形状。</u>如果许多小体积的敌人排成一列，那么这种直线型的攻击就会对他们造成巨大的伤害。如果敌人包围了恶火，那么它可能只会击中一个敌人，所造成的伤害几乎可以忽略不计。</p>
-<p>这个简单的区别让两者所带来的体验完全不同。<u>恶火总是跑来跑去，并且攻击位于一条线上的敌人，而对方则会不断试图靠近和包围恶火。</u></p>
-<p>恶火也能很好地利用环境和配合其他的友军单位。由于它能够进行范围攻击，玩家可以把恶火放在墙壁的后面来掩护它，或者把它放在其他单位的后面来配合打击体积小的敌人群体。此外，它还可以从高处对敌人发起攻击。</p>
-<p>最后，恶火的攻击频率比掠夺者要低很多，从而使得恶火在两次攻击之间有足够的时间可以移动。这就为高级战术“边打边跑”提供了前提条件。相比之下，掠夺者的攻击频率就太高了，因而不可能使用这种战术，这完全抹杀了每时每刻的紧张感以及操作的技巧。</p>
-<p><img src="https://s2.loli.net/2021/12/19/oXPeUwdNQ6j3L2W.jpg" title="无法充分利用掩体和同伴"><img src="https://s2.loli.net/2021/12/19/oJHcPTx5Ge7Q2n3.jpg" title="从掩体或同伴后方发起攻击"></p>
-<p>恶火的设计更为优雅，因为它能够比掠夺者带来更多的挑战、战术组合，以及不同的状况。</p>
-<p><strong>优雅并不是那些闪闪发光的小玩意，或者是让人兴奋的设计陷阱。相反，它来自于这些事物的对立面：利用简单朴实的设计浇灌出无数种不同的体验。</strong></p>
-<p><strong>当我们描述一个曾经的最优雅的游戏系统时，它们可能听起来相当的简单，甚至可以说是无趣。但是设计本身的形式并不重要，真正重要的是游戏过程中出现的可能性空间的深度和广度。</strong></p>
+</li>
+<li><p>在编辑器模式下，无论是否运行游戏，均会触发。</p>
+</li>
+<li><p>在发布后的游戏中，Gizmos 不会渲染。</p>
+</li>
+</ul>
+<h5 id="用途：-9"><a href="#用途：-9" class="headerlink" title="用途："></a>用途：</h5><ul>
+<li><p>调试与可视化，如绘制辅助线（标记路径、范围或方向）、显示碰撞体（可视化碰撞体形状，无需运行即可观察）、标记关键点（如生成点、触发器位置、AI 路径点等）。</p>
+</li>
+<li><p>开发工具扩展，自定义编辑器工具，为插件或工具绘制可视化界面（如地形编辑器的笔刷范围）</p>
+</li>
+<li><p>快速验证逻辑，在编辑模式下直接观察算法结果（如网格生成、寻路节点）。</p>
+</li>
+</ul>
+<h3 id="注意事项：-2"><a href="#注意事项：-2" class="headerlink" title="注意事项："></a>注意事项：</h3><p>避免在 OnDrawGizmos() 中执行复杂计算或高频绘制大量图形，否则会降低编辑器流畅度。</p>
+<h2 id="3-OnGUI"><a href="#3-OnGUI" class="headerlink" title="3.OnGUI()"></a>3.OnGUI()</h2><h5 id="触发时机：-10"><a href="#触发时机：-10" class="headerlink" title="触发时机："></a>触发时机：</h5><p>OnGUI() 的触发与 Unity 的事件处理循环（Event Processing） 紧密相关，而非简单的“每帧多次”。具体规则如下：</p>
+<ul>
+<li><p>每帧至少调用一次：用于处理基本的 GUI 渲染和事件响应。</p>
+</li>
+<li><p>事件触发额外调用：当有输入事件（如鼠标点击、键盘按下）发生时，Unity 会多次调用 OnGUI() 以处理事件传播。</p>
+</li>
+</ul>
+<h5 id="用途：-10"><a href="#用途：-10" class="headerlink" title="用途："></a>用途：</h5><ul>
+<li><p>调试工具：在开发过程中，OnGUI()可以快速创建按钮、标签等 UI 元素，方便调试和测试游戏逻辑，也可用于显示变量、状态等实时信息，帮助开发者监控游戏运行情况。</p>
+</li>
+<li><p>原型设计简单UI：在项目初期，OnGUI 可以快速搭建简单的 UI 原型。</p>
+</li>
+<li><p>编辑器工具：用于创建自定义编辑器窗口或 Inspector 扩展，方便资源管理和配置。</p>
+</li>
+</ul>
+<h3 id="注意事项：-3"><a href="#注意事项：-3" class="headerlink" title="注意事项："></a>注意事项：</h3><p>OnGUI 每帧调用，频繁使用可能影响性能，不适合复杂 UI。现在更推荐使用UGUI或UI Toolkit替代进行UI开发。</p>
+<h1 id="结束与清理"><a href="#结束与清理" class="headerlink" title="结束与清理"></a>结束与清理</h1><h2 id="1-OnDisable"><a href="#1-OnDisable" class="headerlink" title="1.OnDisable()"></a>1.OnDisable()</h2><h5 id="触发时机：-11"><a href="#触发时机：-11" class="headerlink" title="触发时机："></a>触发时机：</h5><ul>
+<li><p>gameobject被禁用，即调用gameObject.SetActive(false)时，该对象以及其子对象所有脚本的OnDisable()会被触发。</p>
+</li>
+<li><p>脚本被禁用时，该脚本的OnDisable()会被调用。</p>
+</li>
+<li><p>对象被销毁或场景卸载时未被标记为DontDestroyOnLoad，在OnDestroy()前触发OnDisable()</p>
+</li>
+</ul>
+<h5 id="用途：-11"><a href="#用途：-11" class="headerlink" title="用途："></a>用途：</h5><p>清理资源和终止逻辑，包括取消事件订阅、停止协程与定时器、释放临时资源，以及重置状态以确保下次启用时处于初始状态。</p>
+<h2 id="2-OnDestroy"><a href="#2-OnDestroy" class="headerlink" title="2.OnDestroy()"></a>2.OnDestroy()</h2><h5 id="触发时机：-12"><a href="#触发时机：-12" class="headerlink" title="触发时机："></a>触发时机：</h5><ul>
+<li><p>调用 Destroy(gameObject) 或 Destroy(this) 时，触发对应对象的 OnDestroy()。</p>
+</li>
+<li><p>当场景切换且对象未标记为 DontDestroyOnLoad 时，场景中的对象会被销毁。</p>
+</li>
+<li><p>应用退出时，所有活动对象的 OnDestroy() 会被触发（但非强制终止的情况，如崩溃时可能不会调用）。</p>
+</li>
+<li><p>通过 Destroy(component) 移除脚本组件时，该组件的 OnDestroy() 会被调用，但 GameObject 仍存在。</p>
+</li>
+</ul>
+<h5 id="用途：-12"><a href="#用途：-12" class="headerlink" title="用途："></a>用途：</h5><p>主要用于执行对象销毁前的清理操作，包括释放资源（内存释放等）、取消事件订阅、停止协程或Invoke定时任务，另外可用于保存数据，但应用非正常退出时可能无法触发。</p>
+<h2 id="3-OnApplicationQuit"><a href="#3-OnApplicationQuit" class="headerlink" title="3.OnApplicationQuit()"></a>3.OnApplicationQuit()</h2><h5 id="触发时机：-13"><a href="#触发时机：-13" class="headerlink" title="触发时机："></a>触发时机：</h5><p>应用程序正常退出时调用，Unity编辑器模式下点击Play按钮中止播放时调用。注意在移动端切换到后台时不调用OnApplicationQuit()，而是调用OnApplicationPause(true)。当程序崩溃或强制中止（如在任务管理器关闭进程）不调用OnApplicationQuit()。</p>
+<h5 id="用途：-13"><a href="#用途：-13" class="headerlink" title="用途："></a>用途：</h5><p>保存数据，终止协程、计时与线程，释放与清理资源，发送退出事件。</p>
 
             </div>
             <hr/>
@@ -548,7 +726,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://10n31y9047.github.io/index/2022/12/12/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-er/">https://10n31y9047.github.io/index/2022/12/12/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-er/</a>
+                    <a href="https://10n31y9047.github.io/index/2025/02/28/unity-zhong-chang-yong-de-sheng-ming-zhou-qi-han-shu/">https://10n31y9047.github.io/index/2025/02/28/unity-zhong-chang-yong-de-sheng-ming-zhou-qi-han-shu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -585,11 +763,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E4%BD%93%E9%AA%8C%E5%BC%95%E6%93%8E%EF%BC%9A%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E5%85%A8%E6%99%AF%E6%8E%A2%E7%A7%98/">
-                                    <span class="chip bg-color">体验引擎：游戏设计全景探秘</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -629,66 +803,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/12/19/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-san/">
+                <a href="/2025/02/28/unity-zhong-chang-yong-de-sheng-ming-zhou-qi-han-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/media/featureimages/16.jpg" class="responsive-img" alt="《体验引擎：游戏设计全景探秘》阅读笔记（三）">
+                        <img src="/media/featureimages/4.jpg" class="responsive-img" alt="Unity中常用的生命周期函数">
                         
-                        <span class="card-title">《体验引擎：游戏设计全景探秘》阅读笔记（三）</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-19
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    阅读笔记
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%BD%93%E9%AA%8C%E5%BC%95%E6%93%8E%EF%BC%9A%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E5%85%A8%E6%99%AF%E6%8E%A2%E7%A7%98/">
-                        <span class="chip bg-color">体验引擎：游戏设计全景探秘</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/12/04/ti-yan-yin-qing-you-xi-she-ji-quan-jing-tan-mi-yue-du-bi-ji-yi/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/media/featureimages/7.jpg" class="responsive-img" alt="《体验引擎：游戏设计全景探秘》阅读笔记（一）">
-                        
-                        <span class="card-title">《体验引擎：游戏设计全景探秘》阅读笔记（一）</span>
+                        <span class="card-title">Unity中常用的生命周期函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -699,14 +825,52 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-02-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            10n31y9047
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/08/30/input-system-shi-yong-zhi-nan-san-input-actions/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/media/featureimages/9.jpg" class="responsive-img" alt="Input-System使用指南（三）-Input Actions">
+                        
+                        <span class="card-title">Input-System使用指南（三）-Input Actions</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-08-30
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    阅读笔记
+                            <a href="/categories/Unity/" class="post-category">
+                                    Unity
                                 </a>
                             
                             
@@ -716,8 +880,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BD%93%E9%AA%8C%E5%BC%95%E6%93%8E%EF%BC%9A%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1%E5%85%A8%E6%99%AF%E6%8E%A2%E7%A7%98/">
-                        <span class="chip bg-color">体验引擎：游戏设计全景探秘</span>
+                    <a href="/tags/Input-System/">
+                        <span class="chip bg-color">Input System</span>
                     </a>
                     
                 </div>

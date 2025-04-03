@@ -6,7 +6,7 @@
   <link href="https://10n31y9047.github.io/index/atom.xml" rel="self"/>
   
   <link href="https://10n31y9047.github.io/index/"/>
-  <updated>2024-08-28T21:17:42.000Z</updated>
+  <updated>2025-04-03T21:50:05.677Z</updated>
   <id>https://10n31y9047.github.io/index/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unity中常用的生命周期函数</title>
+    <link href="https://10n31y9047.github.io/index/2025/02/28/unity-zhong-chang-yong-de-sheng-ming-zhou-qi-han-shu/"/>
+    <id>https://10n31y9047.github.io/index/2025/02/28/unity-zhong-chang-yong-de-sheng-ming-zhou-qi-han-shu/</id>
+    <published>2025-02-28T07:34:16.000Z</published>
+    <updated>2025-04-03T21:50:05.677Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;下图为&lt;strong&gt;Unity脚本生命周期流程图&lt;/strong&gt;，图源：&lt;a href=&quot;https://docs.unity.cn/cn/2023.2/Manual/ExecutionOrder.html&quot;&gt;Unity官方手册&lt;/a&gt;&lt;br&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Input-System使用指南（三）-Input Actions</title>
+    <link href="https://10n31y9047.github.io/index/2024/08/30/input-system-shi-yong-zhi-nan-san-input-actions/"/>
+    <id>https://10n31y9047.github.io/index/2024/08/30/input-system-shi-yong-zhi-nan-san-input-actions/</id>
+    <published>2024-08-30T15:52:12.000Z</published>
+    <updated>2024-09-05T15:20:22.137Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;Input Actions是Input System的重点内容，通过Input</summary>
+        
+      
+    
+    
+    
+    <category term="Unity" scheme="https://10n31y9047.github.io/index/categories/Unity/"/>
+    
+    
+    <category term="Input System" scheme="https://10n31y9047.github.io/index/tags/Input-System/"/>
+    
+  </entry>
   
   <entry>
     <title>Input System使用指南（二） 直接输入</title>
@@ -28,8 +74,8 @@
       
         
         
-    <summary type="html">&lt;p&gt;与Input Manager相似，Input System也支持用代码直接获取设备的输入。&lt;/p&gt;
-&lt;h1 id=&quot;几个例子&quot;&gt;&lt;a href=&quot;#几个例子&quot; class=&quot;headerlink&quot; title=&quot;几个例子&quot;&gt;&lt;/a&gt;几个例子&lt;/h1&gt;&lt;h2</summary>
+    <summary type="html">&lt;p&gt;与Input Manager相似，Input System也支持用代码直接获取设备的输入。这种控制方式与Input System的设计初衷相违背，所以一般很少使用。&lt;/p&gt;
+&lt;h1 id=&quot;几个例子&quot;&gt;&lt;a href=&quot;#几个例子&quot; class=&quot;headerlink&quot;</summary>
         
       
     
